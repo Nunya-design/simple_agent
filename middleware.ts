@@ -1,6 +1,7 @@
-import { clerkMiddleware } from "@clerk/nextjs/server";
+// middleware.ts
+import { withClerkMiddleware } from '@clerk/nextjs/server';
 
-export default clerkMiddleware();
+export default withClerkMiddleware();
 
 export const config = {
   matcher: [
